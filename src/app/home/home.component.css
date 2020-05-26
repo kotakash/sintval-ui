@@ -1,0 +1,12 @@
+.imageHome {
+    background-image: url('../images/blue_keyboard.jpg');
+    width:auto;
+    background-position: center;
+    height: 15em;
+}
+.container {
+    background-color:lightgrey;
+    
+    width: auto;
+    padding: 25px;
+}

@@ -1,0 +1,38 @@
+.imageAddUser {
+    background-image: url('../images/books_computer.jpg');
+    width: auto;
+    background-position: center;
+    height: 40em;
+    
+}
+
+
+button {
+    margin: auto;
+}
+label {
+    font-weight: 700;
+}
+.cent {
+    width: auto;
+    margin: 50px 500px 0px 500px;
+    
+}
+.container {
+    border-style: ridge;
+    
+    border-color: white;
+    padding: 25px;
+}
+
+/* .imageAddUser::before {
+    content: "";
+    background-image: url('../images/blue_design.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+} */

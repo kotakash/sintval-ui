@@ -1,0 +1,34 @@
+<div class="imageAddUser">
+    <h2 style="text-align: center;">{{welcome}}</h2>
+    <div class="container-fluid" class="cent">
+        
+        
+        <form #userForm="ngForm"  (ngSubmit)="onSubmit()" novalidate >
+            <div class="container">
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input style="background-color: rgba(255,255,255,0.5);" type="text" required #fName="ngModel" [class.is-invalid]="fName.invalid && fName.touched" class="form-control " [(ngModel)]="userModel.FirstName" name="FirstName" placeholder="Enter First Name">
+                    <small class="text-danger"  [class.d-none]="fName.valid || fName.untouched">First Name is required</small>
+                </div>
+                
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input style="background-color: rgba(255,255,255,0.5);" type="text" required #lName="ngModel" [class.is-invalid]="lName.invalid && lName.touched" class="form-control " [(ngModel)]="userModel.LastName" name="LastName" placeholder="Enter Last Name">
+                    <small class="text-danger" [class.d-none]="lName.valid || lName.untouched">Last Name is required</small>
+                </div>
+                <div class="form-group">
+                    <label>UID</label>
+                    <input style="background-color: rgba(255,255,255,0.5);" type="text" required #uid="ngModel" [class.is-invalid]="uid.invalid && uid.touched" class="form-control " [(ngModel)]="userModel.UID" name="UID" placeholder="Enter UID">
+                    <small class="text-danger" [class.d-none]="uid.valid || uid.untouched">UID is required</small>
+                </div>
+            </div>
+            <br>
+            <button type="submit" [disabled]="userForm.form.invalid" class="btn btn-success" >Register</button>
+        </form>
+        <h6 style="color:darkgreen;">{{result}}</h6>
+        <h6 style="color:red;">{{resultErr}}</h6>
+    </div>
+
+
+</div>
+    

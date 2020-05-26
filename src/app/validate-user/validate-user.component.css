@@ -1,0 +1,26 @@
+.imageValidate {
+    background-image: url('../images/books_computer.jpg');
+    width: auto;
+    background-position: center;
+    height: 40em;
+    
+}
+
+button {
+    margin: auto;
+}
+.cent {
+    width: auto;
+    margin: 50px 500px 0px 500px;
+    
+}
+.container {
+    border-style: ridge;
+    
+    border-color: white;
+    padding: 25px;
+}
+label {
+    font-weight: 700;
+}
+
